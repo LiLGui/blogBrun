@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Bruno Editor</title>
+</head>
+<body>
+    <!-- itens ocultos -->
+    <div id="view" class="screen_view">
+        <div class="block_view">
+            <div class="capsule">
+                <div id="linkVideo" class="embed">
+                    <iframe src="https://www.youtube.com/embed/rtAWPMLYMpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="inff">
+                <h2 id="title_video">tetie</h2>
+                <p id="descption_video">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate aspernatur earum nostrum laboriosam eum iure unde magnam aperiam animi!</p>
+                <div class="butt">
+                    <button id="fechaView">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="screen_contato" class="screen_contato">
+        <div class="screen_contato_dados">
+            <div id="close_contact" class="close_button"><i class="ri-close-circle-fill"></i></div>
+            <h2>Contato</h2>
+            <p>Preencha os dados abaixo</p>
+            <div class="dados_user">
+                <form action="index.html" method="get">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <input type="number" name="numero" id="numero" placeholder="Número" required>
+                    <div class="send"><input id="send_buton" type="submit" value="Finalizar"></div>
+                </form>
+            </div>
+            <p>Após a finalização entraremos em contato com você</p>
+
+        </div>
+    </div>
+    <!-- fim itens ocultos -->
+    <div class="container">
+        <div id="MenuRetratil" class="retratil_menu">
+            <div class="close_retratil"></div>
+            <h3>Menu</h3>
+            <ul class="MenuSettItens">
+                <li><a href="index.html"><i class="ri-home-line"></i> Home</a></li>
+                <li><a href="#"><i class="ri-bar-chart-2-line"></i> Projetos</a></li>
+                <li><a id="contato"><i class="ri-question-answer-line"></i> Contato</a></li>
+            </ul>
+            <button onclick="fecha()" id="fechaMenu"><i class="ri-close-line"></i>Fechar</button>
+        </div>
+        <header class="links_menu">
+            <div class="logo">
+                <a href="index.html">Bruno Editor</a>
+            </div>
+            <div class="links_ul">
+                <ul>
+                    <li><a href="index.html"><i class="ri-home-line"></i> Home</a></li>
+                    <li><a href="#"><i class="ri-bar-chart-2-line"></i> Projetos</a></li>
+                    <li><a id="contatoToo"><i class="ri-question-answer-line"></i> Contato</a></li>
+                </ul>
+            </div>
+            <div class="ocult"><a onclick="abre()" id="botao"><i class="ri-menu-line" id="i_altera"></i></a></div>
+        </header>
+    </div>
+
+    <main class="content_page">
+        <div class="capsula_blocks">
+            <div onclick="OpenView(1)" class="block">
+                <div class="recent_alert">
+                    <p><i class="ri-pushpin-fill"></i> NOVO</p>
+                </div>
+                <div class="imagem_block"><img src="assets/img/image01.jpg" alt=""></div>
+                <div class="informations">
+
+                    <h2>
+                        Brazil’s Lula da Silva, explained
+                    </h2>
+                    <p>
+                        On October 2, 2022, Brazilians voted in the first round of their presidential election.
+                    </p>
+
+                </div>
+            </div>
+
+            <div onclick="OpenView(2)" class="block">
+                <div class="imagem_block"><img src="assets/img/image02.jpg" alt=""></div>
+                <div class="informations">
+                    <h2>
+                        Como Recuperar Arquivos Apagados de Uma Forma Simples e Rápido - Tutorial 2022
+                    </h2>
+                    <p>
+                        Aprenda agora a como recuperar arquivos apagados de uma forma simples e rápida.
+                    </p>
+                </div>
+            </div>
+
+            <div onclick="OpenView(3)" class="block">
+                <div class="imagem_block"><img src="assets/img/image03.jpg" alt=""></div>
+                <div class="informations">
+                    <h2>
+                        Como Resolver CPU 100% de Uso Todas as Versões do Windows - Tutorial 2022
+                    </h2>
+                    <p>
+                        Como Resolver CPU 100% de Uso Todas as Versões do Windows - Tutorial 2022
+                    </p>
+                </div>
+            </div>
+
+            <div onclick="OpenView(4)" class="block">
+                <div class="imagem_block"><img src="assets/img/image04.jpg" alt=""></div>
+                <div class="informations">
+                    <h2>
+                        Como Deixar o Discord Mais Leve, Tirar Lag e Otimizar Desempenho - Tutorial 2022
+                    </h2>
+                    <p>
+                        Você vai aprender agora a como deixar o seu Discord mais leve.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="end_page">
+        <div class="block_end">
+            <ul class="cont_links">
+                <li><a href="" target="_blank"><i class="ri-facebook-circle-fill"></i></a></li>
+                <li><a href="https://www.instagram.com/brunol.editor/" target="_blank"><i class='bx bxl-instagram-alt'></i></a></li>
+                <li><a href="https://wa.me/5587981292970?text=Ol%C3%A1%2C+gostaria+de+falar+com+voc%C3%AA%21" target="_blank"><i class="ri-whatsapp-fill"></i></a></li>
+            </ul>
+            <ul class="about_links">
+                <li><a href="">Info</a></li>
+                <li><a href="">Suport</a></li>
+                <li><a href="">Marketing</a></li>
+            </ul>
+            <p>Todos os direitos reservados - <a href="https://www.instagram.com/code_ing.exe/" target="_blank">Rafael William</a> - copyright © - <span id="Date">DATE JS</span></p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
